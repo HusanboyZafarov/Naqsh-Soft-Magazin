@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 1000px) {
     :root {
-        --size-heading: 60px;
+        --size-heading: 50px;
         --size-heading-small: 36px;
         --size-text: 16px;
         --size-text-big: 20px;
@@ -61,34 +61,54 @@
         --size-text-small: 14px;
     }
 
+    .secondary_text br {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 900px) {
     :root {
-        --size-heading: 60px;
-        --size-heading-small: 36px;
+        --size-heading: 55px;
+        --size-heading-small: 34px;
         --size-text: 16px;
         --size-text-big: 20px;
         --size-text-large: 24px;
         --size-text-small: 14px;
+    }
+
+    .hero_item {
+        width: 100%;
+    }
+
+    .hero_item:nth-child(2) {
+        width: 100%;
+        margin-top: 4%;
+    }
+
+    .price_item {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 800px) {
     :root {
-        --size-heading: 60px;
-        --size-heading-small: 36px;
+        --size-heading: 50px;
+        --size-heading-small: 32px;
         --size-text: 16px;
         --size-text-big: 20px;
         --size-text-large: 24px;
         --size-text-small: 14px;
     }
+
+    .secondary_item {
+        width: 48%;
+    }
 }
 
 @media screen and (max-width: 700px) {
     :root {
-        --size-heading: 60px;
-        --size-heading-small: 36px;
+        --size-heading: 50px;
+        --size-heading-small: 32px;
         --size-text: 16px;
         --size-text-big: 20px;
         --size-text-large: 24px;
@@ -98,8 +118,8 @@
 
 @media screen and (max-width: 600px) {
     :root {
-        --size-heading: 60px;
-        --size-heading-small: 36px;
+        --size-heading: 50px;
+        --size-heading-small: 32px;
         --size-text: 16px;
         --size-text-big: 20px;
         --size-text-large: 24px;
@@ -113,50 +133,82 @@
     .sotib_olish,
     .sotib_korish {
         display: block;
+    }
 
+    .hero_lower_info {
+        margin-top: 20px;
+    }
+
+    .secondary_item {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 500px) {
     :root {
-        --size-heading: 60px;
-        --size-heading-small: 36px;
+        --size-heading: 45px;
+        --size-heading-small: 30px;
         --size-text: 16px;
-        --size-text-big: 20px;
-        --size-text-large: 24px;
+        --size-text-big: 19px;
+        --size-text-large: 23px;
         --size-text-small: 14px;
+    }
+
+    .hero_links a {
+        margin-left: 0 !important;
+        display: block !important;
+        text-align: center;
+    }
+
+    .hero_links a:nth-child(2) {
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding-top: 140px;
+    }
+
+    .hero_companies {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero_companies_item {
+        width: 33%;
+        margin: 0;
+    }
+
+    .price_item {
+        padding: 16px;
+    }
+
+    .price_body_item {
+        padding: 16px 0;
     }
 }
 
 @media screen and (max-width: 400px) {
     :root {
-        --size-heading: 60px;
-        --size-heading-small: 36px;
-        --size-text: 16px;
-        --size-text-big: 20px;
-        --size-text-large: 24px;
+        --size-heading: 40px;
+        --size-heading-small: 28px;
+        --size-text: 14px;
+        --size-text-big: 18px;
+        --size-text-large: 22px;
         --size-text-small: 14px;
+    }
+
+    .hero_companies_item {
+        width: 50%;
     }
 }
 
 @media screen and (max-width: 300px) {
     :root {
-        --size-heading: 60px;
-        --size-heading-small: 36px;
-        --size-text: 16px;
-        --size-text-big: 20px;
-        --size-text-large: 24px;
-        --size-text-small: 14px;
-    }
-}
-
-@media screen and (max-width: 200px) {
-    :root {
-        --size-heading: 60px;
-        --size-heading-small: 36px;
-        --size-text: 16px;
-        --size-text-big: 20px;
-        --size-text-large: 24px;
+        --size-heading: 30px;
+        --size-heading-small: 26px;
+        --size-text: 14px;
+        --size-text-big: 16px;
+        --size-text-large: 20px;
         --size-text-small: 14px;
     }
 }

@@ -35,3 +35,15 @@ header_inner_item.forEach((item) => {
         closer.classList.remove("changed")
     })
 })
+
+
+let btns = document.querySelectorAll(".price_btns button")
+
+btns.forEach((item) => {
+    item.addEventListener("click", () => {
+        btns.forEach((el) => {
+            el.classList.remove("selected")
+        });
+        item.classList.add("selected")
+    })
+})
