@@ -7,7 +7,8 @@ window.addEventListener("scroll", () => {
 let burger = document.querySelector(".burger"),
     lines = document.querySelectorAll(".line"),
     navbar = document.querySelector(".header_inner_list"),
-    closer = document.querySelector(".closer")
+    closer = document.querySelector(".closer"),
+    header_inner_item = document.querySelectorAll(".header_inner_item")
 
 burger.addEventListener("click", () => {
     lines.forEach((item) => {
@@ -23,4 +24,14 @@ closer.addEventListener("click", () => {
     });
     navbar.classList.toggle("opened")
     closer.classList.toggle("changed")
+})
+
+header_inner_item.forEach((item) => {
+    item.addEventListener("click", () => {
+        lines.forEach((item) => {
+            item.classList.remove("changed")
+        });
+        navbar.classList.remove("opened")
+        closer.classList.remove("changed")
+    })
 })

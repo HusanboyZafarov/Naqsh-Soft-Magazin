@@ -28,9 +28,10 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
-    font-size: var(--size-text);
+    font-size: var(--size-text-big);
     font-family: 'Poppins Meduim';
     scroll-behavior: smooth;
+    color: var(--color-black-hovered);
     transition: all 0.5s ease;
 }
 
@@ -66,7 +67,9 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
     left: 0;
+    background: var(--color-white);
 }
 
 header.scrolled {
@@ -214,4 +217,58 @@ h3 {
 .sotib_olish,
 .sotib_korish {
     display: none;
+}
+
+.hero {
+    padding: 200px 0;
+}
+
+.hero_subheading {
+    display: inline;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: var(--color-green);
+    font-size: var(--size-text);
+    color: var(--color-white);
+}
+
+.hero_links {
+    margin-top: 24px;
+}
+
+.hero_links a {
+    padding: 14px 28px;
+    font-size: var(--size-text);
+}
+
+.hero_links a:nth-child(1) {
+    color: var(--color-white-text);
+    background: var(--color-green);
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+}
+
+.hero_links a:nth-child(1):hover {
+    color: var(--color-black);
+    background: var(--color-white);
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+    transform: scale(0.9);
+}
+
+.hero_links a:nth-child(2):hover {
+    color: var(--color-white);
+    background: var(--color-black);
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+    transform: scale(0.9);
+}
+
+.hero_links a:nth-child(2) {
+    color: var(--color-black);
+    display: inline-block;
+    margin-left: 26px;
+    background: var(--color-white);
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
 }
