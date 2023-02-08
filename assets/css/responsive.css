@@ -100,7 +100,8 @@
         --size-text-small: 14px;
     }
 
-    .secondary_item {
+    .secondary_item,
+    .contact_item {
         width: 48%;
     }
 }
@@ -139,7 +140,8 @@
         margin-top: 20px;
     }
 
-    .secondary_item {
+    .secondary_item,
+    .contact_item {
         width: 100%;
     }
 }
@@ -184,6 +186,17 @@
 
     .price_body_item {
         padding: 16px 0;
+    }
+
+    .contact_link {
+        display: inline-flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_item img {
+        width: 7rem;
     }
 }
 
