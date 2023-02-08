@@ -1,0 +1,161 @@
+@media screen and (max-width: 1200px) {
+    :root {
+        --color-black: #2A3342;
+        --color-black-hovered: #556987;
+        --color-green: #22C55E;
+        --color-white-text: #F0FDF4;
+        --color-white: #FFFFFF;
+        --size-heading: 60px;
+        --size-heading-small: 36px;
+        --size-text: 16px;
+        --size-text-big: 20px;
+        --size-text-large: 24px;
+        --size-text-small: 14px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    :root {
+        --size-heading: 60px;
+        --size-heading-small: 36px;
+        --size-text: 16px;
+        --size-text-big: 20px;
+        --size-text-large: 24px;
+        --size-text-small: 14px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        --size-heading: 60px;
+        --size-heading-small: 36px;
+        --size-text: 16px;
+        --size-text-big: 20px;
+        --size-text-large: 24px;
+        --size-text-small: 14px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header_inner_list {
+        position: fixed;
+        right: -200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 200px;
+        background: var(--color-white-text);
+        height: 100vh;
+        padding: 40px;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .header_inner_list.opened {
+        right: 0;
+    }
+
+    .header_inner_item {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --size-heading: 60px;
+        --size-heading-small: 36px;
+        --size-text: 16px;
+        --size-text-big: 20px;
+        --size-text-large: 24px;
+        --size-text-small: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --size-heading: 60px;
+        --size-heading-small: 36px;
+        --size-text: 16px;
+        --size-text-big: 20px;
+        --size-text-large: 24px;
+        --size-text-small: 14px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    :root {
+        --size-heading: 60px;
+        --size-heading-small: 36px;
+        --size-text: 16px;
+        --size-text-big: 20px;
+        --size-text-large: 24px;
+        --size-text-small: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --size-heading: 60px;
+        --size-heading-small: 36px;
+        --size-text: 16px;
+        --size-text-big: 20px;
+        --size-text-large: 24px;
+        --size-text-small: 14px;
+    }
+
+    .header_links a {
+        display: none;
+    }
+
+    .sotib_olish,
+    .sotib_korish {
+        display: block;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        --size-heading: 60px;
+        --size-heading-small: 36px;
+        --size-text: 16px;
+        --size-text-big: 20px;
+        --size-text-large: 24px;
+        --size-text-small: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        --size-heading: 60px;
+        --size-heading-small: 36px;
+        --size-text: 16px;
+        --size-text-big: 20px;
+        --size-text-large: 24px;
+        --size-text-small: 14px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    :root {
+        --size-heading: 60px;
+        --size-heading-small: 36px;
+        --size-text: 16px;
+        --size-text-big: 20px;
+        --size-text-large: 24px;
+        --size-text-small: 14px;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    :root {
+        --size-heading: 60px;
+        --size-heading-small: 36px;
+        --size-text: 16px;
+        --size-text-big: 20px;
+        --size-text-large: 24px;
+        --size-text-small: 14px;
+    }
+}
