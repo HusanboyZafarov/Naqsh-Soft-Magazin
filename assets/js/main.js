@@ -20,6 +20,7 @@ burger.addEventListener("click", () => {
         item.classList.toggle("changed")
     });
     navbar.classList.toggle("opened")
+    burger.classList.remove("closed")
     form.classList.remove("opened")
     closer.classList.toggle("changed")
 })

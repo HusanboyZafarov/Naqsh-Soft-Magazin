@@ -711,3 +711,8 @@ h3 {
 .error .message_closer div {
     background: #E03616;
 }
+
+.sinab_korish,
+.sotib_olish {
+    display: none;
+}
