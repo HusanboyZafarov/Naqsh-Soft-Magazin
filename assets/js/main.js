@@ -26,7 +26,7 @@ burger.addEventListener("click", () => {
 
 closer.addEventListener("click", () => {
     lines.forEach((item) => {
-        item.classList.toggle("changed")
+        item.classList.remove("changed")
     });
     navbar.classList.remove("opened")
     form.classList.remove("opened")
@@ -45,7 +45,6 @@ header_inner_item.forEach((item) => {
         }
     })
 })
-
 
 let btns = document.querySelectorAll(".price_btns button")
 btns.forEach((item) => {
@@ -71,7 +70,32 @@ closers.addEventListener("click", () => {
 
 sotib_olish.addEventListener("click", () => {
     closer.classList.add("changed")
+    burger.classList.add("closed")
 })
+
 sinab_korish.addEventListener("click", () => {
     closer.classList.add("changed")
+    burger.classList.add("closed")
 })
+
+let success = document.querySelector(".success"),
+    error = document.querySelector(".error")
+
+window.addEventListener("load", () => {
+    timeID = setTimeout(opened, 5000)
+    success.classList.add("opened")
+    error.classList.add("opened")
+
+    function opened() {
+        success.classList.remove("opened")
+        error.classList.remove("opened")
+    }
+})
+
+let message_closer = document.querySelectorAll(".message_closer")
+message_closer.forEach((item) => {
+    item.addEventListener("click", () => {
+        parent = item.parentElement
+        parent.classList.remove("opened")
+    })
+});

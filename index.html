@@ -85,6 +85,24 @@
             <textarea name="message" id="message" placeholder="Qo’shimcha xabar"></textarea>
             <button type="submit">Yuborish</button>
         </form>
+        <div class="success">
+            <div class="message_closer">
+                <div class="message_closer_one"></div>
+                <div class="message_closer_two"></div>
+            </div>
+            <p class="message_body">
+                Xabar qabul qilindi , tez orada siz bilan bog’lanamiz.
+            </p>
+        </div>
+        <div class="error">
+            <div class="message_closer">
+                <div class="message_closer_one"></div>
+                <div class="message_closer_two"></div>
+            </div>
+            <p class="message_body">
+                Xatolik yuz berdi! Qayta urunib qoring!
+            </p>
+        </div>
     </header>
     <main>
         <div class="hero">
@@ -102,12 +120,12 @@
                                 nazorat o’rnating.
                             </p>
                             <div class="hero_links">
-                                <a href="#" role="button">
+                                <button class="form_opener">
                                     Bepul sinab ko’rish
-                                </a>
-                                <a href="#" role="button">
+                                </button>
+                                <button class="form_opener">
                                     Sotib olish
-                                </a>
+                                </button>
                             </div>
                             <p class="hero_lower_info">
                                 Naqsh Market dasturidan foydalanuvchi bizneslar
@@ -270,7 +288,7 @@
                     <div class="wrapper_btns">
                         <div class="price_btns">
                             <button class="month selected">Oylik to’lov</button>
-                            <button class="forever">Butunlay sotib olish</button>
+                            <button class="forever form_opener">Butunlay sotib olish</button>
                         </div>
                     </div>
                     <ul class="price_list">

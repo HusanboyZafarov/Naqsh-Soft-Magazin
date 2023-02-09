@@ -28,7 +28,7 @@
         height: 100vh;
         padding: 40px;
         top: 0;
-        z-index: 1000;
+        z-index: 110;
     }
 
     .header_inner_list.opened {
@@ -156,13 +156,13 @@
         --size-text-small: 14px;
     }
 
-    .hero_links a {
+    .hero_links button {
         margin-left: 0 !important;
         display: block !important;
         text-align: center;
     }
 
-    .hero_links a:nth-child(2) {
+    .hero_links button:nth-child(2) {
         margin-top: 10px;
     }
 
@@ -204,6 +204,16 @@
         padding: 14px 25.5px;
         padding-top: 51px;
     }
+
+    .success,
+    .error {
+        width: 100%;
+    }
+
+    .success.opened,
+    .error.opened {
+        left: 0px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -223,6 +233,10 @@
     .price_info_item h1::after {
         top: -10px;
         left: -20px;
+    }
+
+    .hero_links button {
+        width: 100%;
     }
 }
 
