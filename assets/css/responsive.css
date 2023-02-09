@@ -127,7 +127,7 @@
         --size-text-small: 14px;
     }
 
-    .header_links a {
+    .header_links button {
         display: none;
     }
 
@@ -198,6 +198,12 @@
     .header_item img {
         width: 7rem;
     }
+
+    .form {
+        width: 90%;
+        padding: 14px 25.5px;
+        padding-top: 51px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -212,6 +218,11 @@
 
     .hero_companies_item {
         width: 50%;
+    }
+
+    .price_info_item h1::after {
+        top: -10px;
+        left: -20px;
     }
 }
 
