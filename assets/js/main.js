@@ -1,6 +1,7 @@
 let header = document.querySelector('header'),
     sotib_olish = document.querySelector(".sotib_olish"),
-    sinab_korish = document.querySelector(".sinab_korish")
+    sinab_korish = document.querySelector(".sinab_korish"),
+    boglanish = document.querySelector(".boglanish")
 
 let form_opener = document.querySelectorAll(".form_opener"),
     form = document.querySelector(".form"),
@@ -79,6 +80,7 @@ sinab_korish.addEventListener("click", () => {
     burger.classList.add("closed")
 })
 
+
 let success = document.querySelector(".success"),
     error = document.querySelector(".error")
 
@@ -100,3 +102,9 @@ message_closer.forEach((item) => {
         parent.classList.remove("opened")
     })
 });
+
+boglanish.addEventListener("click", () => {
+    console.log("log");
+    burger.classList.add("closed")
+    closer.classList.add("changed")
+})

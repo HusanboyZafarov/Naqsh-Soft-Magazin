@@ -327,7 +327,7 @@ h3 {
 }
 
 .secondary {
-    padding: 100px 0;
+    padding-top: 120px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
     background-repeat: no-repeat;
     background-position: center;
@@ -426,6 +426,10 @@ h3 {
 .secondary_item,
 .contact_item {
     margin-top: 10%;
+}
+
+.price {
+    padding-top: 120px;
 }
 
 .price_btns {
@@ -715,4 +719,8 @@ h3 {
 .sinab_korish,
 .sotib_olish {
     display: none;
+}
+
+.header_inner_item p {
+    cursor: pointer;
 }

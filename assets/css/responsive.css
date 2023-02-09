@@ -211,6 +211,11 @@
         padding-top: 51px;
     }
 
+    .closers {
+        right: 10px;
+        top: 10px;
+    }
+
     .success,
     .error {
         width: 100%;
