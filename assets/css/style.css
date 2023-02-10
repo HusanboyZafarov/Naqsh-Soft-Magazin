@@ -724,3 +724,26 @@ h3 {
 .header_inner_item p {
     cursor: pointer;
 }
+
+.up {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -50px;
+    bottom: 50px;
+    border-radius: 8px;
+}
+
+.up i {
+    color: var(--color-green);
+    font-size: var(--size-text-large);
+    cursor: pointer;
+}
+
+.up.scrolled {
+    right: 50px;
+}

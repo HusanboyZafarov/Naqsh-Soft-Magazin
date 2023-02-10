@@ -94,6 +94,7 @@
     .price_item {
         width: 100%;
     }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -224,6 +225,20 @@
     .success.opened,
     .error.opened {
         left: 0px;
+    }
+
+    .secondary,
+    .price {
+        padding-top: 85px;
+    }
+
+    .up {
+        bottom: 20px;
+    }
+
+    .up.scrolled {
+        bottom: 20px;
+        right: 20px;
     }
 }
 
