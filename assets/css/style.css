@@ -725,25 +725,38 @@ h3 {
     cursor: pointer;
 }
 
-.up {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    background: var(--color-black);
+.btn-up {
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    right: -50px;
-    bottom: 50px;
-    border-radius: 8px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    background: var(--color-green);
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    opacity: 0;
+    right: -100px;
+    z-index: 1000;
 }
 
-.up i {
+.btn-up.opened {
+    opacity: 1;
+    right: 100px;
+}
+
+.btn-up:hover {
+    background: var(--color-white);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn-up:hover i {
     color: var(--color-green);
-    font-size: var(--size-text-large);
-    cursor: pointer;
 }
 
-.up.scrolled {
-    right: 50px;
+.btn-up i {
+    color: var(--color-white);
+    font-size: var(--size-text-big);
 }

@@ -6,15 +6,11 @@ let header = document.querySelector('header'),
 let form_opener = document.querySelectorAll(".form_opener"),
     form = document.querySelector(".form"),
     closers = document.querySelector(".closers"),
-    up = document.querySelector(".up")
+    up = document.querySelector(".btn-up")
 
 window.addEventListener("scroll", () => {
     header.classList.toggle("scrolled", window.scrollY > 0)
-})
-
-
-window.addEventListener("scroll", () => {
-    up.classList.toggle("scrolled", window.scrollY > 300)
+    up.classList.toggle("opened", window.scrollY > 500)
 })
 
 let burger = document.querySelector(".burger"),

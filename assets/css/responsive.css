@@ -122,6 +122,16 @@
         --size-text-large: 24px;
         --size-text-small: 14px;
     }
+
+    .btn-up {
+        right: -50px;
+        bottom: 50px;
+    }
+
+    .btn-up.opened {
+        opacity: 1;
+        right: 50px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -232,13 +242,23 @@
         padding-top: 85px;
     }
 
-    .up {
+    .btn-up {
         bottom: 20px;
     }
 
-    .up.scrolled {
+    .btn-up.scrolled {
         bottom: 20px;
         right: 20px;
+    }
+
+    .btn-up.opened {
+        opacity: 1;
+        right: 50px;
+    }
+
+    .btn-up {
+        right: -100px;
+        bottom: 50px;
     }
 }
 
@@ -263,6 +283,18 @@
 
     .hero_links button {
         width: 100%;
+    }
+
+    .btn-up.opened {
+        opacity: 1;
+        right: 10px;
+    }
+
+    .btn-up {
+        width: 50px;
+        height: 50px;
+        right: -100px;
+        bottom: 100px;
     }
 }
 
